@@ -27,8 +27,11 @@ public class SmartFileListenerFactory {
     @Value("${file.listen.path}")
     private String monitorDir;
 
+    @Value("${file.listen.interval}")
+    private Long loopInterval;
+
     // 设置轮询间隔
-    private final long interval = TimeUnit.SECONDS.toMillis(1);
+    private final long interval = TimeUnit.SECONDS.toMillis(loopInterval);
 
     // 自动注入业务服务
     @Autowired
