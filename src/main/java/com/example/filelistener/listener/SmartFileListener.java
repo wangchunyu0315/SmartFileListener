@@ -8,14 +8,16 @@ import java.io.File;
 
 /**
  * @ClassName : SmartFileListener
- * @Description : TODO
+ * @Description : 文件监听器
  * @Author : Mr.Wang
  * @Date : 2020-07-04 16:53
  **/
 
 public class SmartFileListener extends FileAlterationListenerAdaptor {
 
-    // 声明业务服务
+    /**
+     *  声明业务服务
+     */
     private SmartFileListenerService listenerService;
 
     /**
@@ -51,9 +53,8 @@ public class SmartFileListener extends FileAlterationListenerAdaptor {
      */
     @Override
     public void onFileChange(File file) {
-        System.out.println("change file : " + file.getName());
-
-        listenerService.onFileCreate(file);
+//        System.out.println("change file : " + file.getName());
+//        listenerService.onFileCreate(file);
     }
 
     /**

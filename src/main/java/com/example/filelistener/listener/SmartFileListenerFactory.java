@@ -17,7 +17,7 @@ import static org.apache.commons.io.IOCase.INSENSITIVE;
 
 /**
  * @ClassName : SmartFileListenerFactory
- * @Description : 文件监听器工厂
+ * @Description : 文件监听器工厂类
  * @Author : Mr.Wang
  * @Date : 2020-07-04 16:59
  **/
